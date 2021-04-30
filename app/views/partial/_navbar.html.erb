@@ -12,6 +12,12 @@
               <%= link_to "ツイート", "#", class: "btn btn-primary tweet-btn" %>
             </li>
           </ul>
+          <ul class="right-actions">
+              <li class="nav-item">
+                <%= link_to "ログアウト", destroy_user_session_path, class: "btn btn-primary tweet-btn", method: :delete %>
+              </li>
+            </ul>
+          </div>
         </div>
       <% else %>
         <div class="navigation">
